@@ -1,0 +1,6 @@
+@PROG3270_GroupProject_HostAddress = http://localhost:5283
+
+GET {{PROG3270_GroupProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

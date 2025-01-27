@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\about.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\about.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\client-app\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\client-app\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\source\\repos\\prog3270_groupproject\\prog3270_groupproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Navbar.js",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Navbar.js",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\Navbar.js",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Navbar.js",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\Navbar.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T19:55:53.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\App.css",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\App.css",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\App.css",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\App.css",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-27T19:07:16.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.js",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\About.js",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\About.js",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\About.js",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\About.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T18:47:34.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.js",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Home.js",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\Home.js",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Home.js",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\Home.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T18:47:18.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:38:26.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.css",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\index.css",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.css",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-27T18:34:40.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\App.js",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\App.js",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\App.js",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\App.js",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T18:32:56.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\public\\index.html",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\public\\index.html",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\public\\index.html",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\public\\index.html",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-27T18:32:43.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.js",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\client-app\\src\\index.js",
+              "ToolTip": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.js",
+              "RelativeToolTip": "PROG3270_GroupProject\\client-app\\src\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T18:32:29.542Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
