@@ -33,3 +33,4 @@ C:\Users\alexa\source\repos\PROG3270_GroupProject\PROG3270_GroupProject\obj\Debu
 C:\Users\alexa\source\repos\PROG3270_GroupProject\PROG3270_GroupProject\obj\Debug\net8.0\PROG3270_GroupProject.pdb
 C:\Users\alexa\source\repos\PROG3270_GroupProject\PROG3270_GroupProject\obj\Debug\net8.0\PROG3270_GroupProject.genruntimeconfig.cache
 C:\Users\alexa\source\repos\PROG3270_GroupProject\PROG3270_GroupProject\obj\Debug\net8.0\ref\PROG3270_GroupProject.dll
+C:\Users\alexa\source\repos\PROG3270_GroupProject\PROG3270_GroupProject\obj\Debug\net8.0\PROG3270_GroupProject.sourcelink.json
