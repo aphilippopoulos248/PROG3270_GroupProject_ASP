@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {}
+    "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {
+    "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
         "projectName": "PROG3270_GroupProject",
-        "projectPath": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
+        "projectPath": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
