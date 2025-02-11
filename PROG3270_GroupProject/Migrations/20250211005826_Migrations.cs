@@ -2,6 +2,8 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace PROG3270_GroupProject.Migrations
 {
     /// <inheritdoc />
@@ -23,6 +25,15 @@ namespace PROG3270_GroupProject.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Members", x => x.MemberID);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Members",
+                columns: new[] { "MemberID", "Email", "Password", "UserName" },
+                values: new object[,]
+                {
+                    { 1, "jdoe@example.com", "hello@1234", "JohnDoe12" },
+                    { 2, "bsmith@example.com", "hello@1234", "BobSmith34" }
                 });
         }
 

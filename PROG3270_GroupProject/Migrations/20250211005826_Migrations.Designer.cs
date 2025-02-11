@@ -11,7 +11,7 @@ using PROG3270_GroupProject.Data;
 namespace PROG3270_GroupProject.Migrations
 {
     [DbContext(typeof(ProjectContext))]
-    [Migration("20250211001746_Migrations")]
+    [Migration("20250211005826_Migrations")]
     partial class Migrations
     {
         /// <inheritdoc />
@@ -47,6 +47,22 @@ namespace PROG3270_GroupProject.Migrations
                     b.HasKey("MemberID");
 
                     b.ToTable("Members");
+
+                    b.HasData(
+                        new
+                        {
+                            MemberID = 1,
+                            Email = "jdoe@example.com",
+                            Password = "hello@1234",
+                            UserName = "JohnDoe12"
+                        },
+                        new
+                        {
+                            MemberID = 2,
+                            Email = "bsmith@example.com",
+                            Password = "hello@1234",
+                            UserName = "BobSmith34"
+                        });
                 });
 #pragma warning restore 612, 618
         }
