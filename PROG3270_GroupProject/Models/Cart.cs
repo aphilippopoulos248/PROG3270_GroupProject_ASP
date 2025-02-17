@@ -10,6 +10,8 @@ namespace PROG3270_GroupProject.Models
         public int UserId { get; set; }
         public DateTime Date { get; set; }
         public List<CartProduct> Products { get; set; } = new();
+        
+        public bool IsEmpty => Products == null || !Products.Any();
     }
 
     public class CartProduct

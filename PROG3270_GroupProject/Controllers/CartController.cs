@@ -147,6 +147,19 @@ namespace PROG3270_GroupProject.Controllers
 
             return NoContent();
         }
+        
+        [HttpGet("empty")]
+        public IActionResult GetEmptyCart()
+        {
+            var emptyCart = new Cart
+            {
+                UserId = 0, // or a default value
+                Date = DateTime.Now,
+                Products = new List<CartProduct>()
+            };
+            return Ok(emptyCart);
+        }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCart(int id)
