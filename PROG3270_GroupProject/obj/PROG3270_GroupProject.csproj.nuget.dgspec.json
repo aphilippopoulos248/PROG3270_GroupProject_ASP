@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {}
+    "C:\\Users\\Selviniah\\Downloads\\PROG3270_GroupProject_ASP\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {
+    "C:\\Users\\Selviniah\\Downloads\\PROG3270_GroupProject_ASP\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
+        "projectUniqueName": "C:\\Users\\Selviniah\\Downloads\\PROG3270_GroupProject_ASP\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
         "projectName": "PROG3270_GroupProject",
-        "projectPath": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
-        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\obj\\",
+        "projectPath": "C:\\Users\\Selviniah\\Downloads\\PROG3270_GroupProject_ASP\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
+        "packagesPath": "C:\\Users\\Selviniah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Selviniah\\Downloads\\PROG3270_GroupProject_ASP\\PROG3270_GroupProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Selviniah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
