@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,11 +75,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Login.cs",
+              "RelativeToolTip": "PROG3270_GroupProject\\Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T05:35:27.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
@@ -93,14 +110,14 @@
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Controllers\\MemberController.cs",
               "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\MemberController.cs",
               "RelativeToolTip": "PROG3270_GroupProject\\Controllers\\MemberController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCYAAAAAAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAmwC4AAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T00:33:49.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Product.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Models\\Product.cs",
@@ -112,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ProjectContext.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Data\\ProjectContext.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Data\\ProjectContext.cs",
@@ -124,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\appsettings.json",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\appsettings.json",
@@ -136,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Program.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Program.cs",
@@ -148,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\WeatherForecast.cs",
@@ -160,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Member.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Models\\Member.cs",
@@ -172,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "20250211005826_Migrations.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
@@ -184,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PROG3270_GroupProject.csproj",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\PROG3270_GroupProject.csproj",
@@ -196,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -208,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "About.js",
               "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\About.js",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\About.js",
@@ -219,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Home.js",
               "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Home.js",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Home.js",
@@ -230,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.css",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.css",
@@ -241,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.js",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\index.js",
@@ -252,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Navbar.js",
               "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Navbar.js",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\src\\Navbar.js",
@@ -263,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\public\\index.html",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\public\\index.html",

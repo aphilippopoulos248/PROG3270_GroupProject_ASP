@@ -39,5 +39,24 @@ namespace PROG3270_GroupProject.Controllers
 
             return CreatedAtAction(nameof(PostMember), new { id = member.MemberID }, member);
         }
+        [HttpPost("authenticate")]
+        public async Task<ActionResult<Member>> GetMemberByCredentials([FromBody] Login login)
+        {
+            if (login == null || string.IsNullOrEmpty(login.Username) || string.IsNullOrEmpty(login.Password))
+            {
+                return BadRequest("Invalid login credentials.");
+            }
+
+            // Check if member exists with matching username and password
+            var member = await _context.Members
+                .FirstOrDefaultAsync(m => m.UserName == login.Username && m.Password == login.Password);
+
+            if (member == null)
+            {
+                return NotFound("Employee not found with the provided credentials.");
+            }
+
+            return Ok(member);
+        }
     }
 }
