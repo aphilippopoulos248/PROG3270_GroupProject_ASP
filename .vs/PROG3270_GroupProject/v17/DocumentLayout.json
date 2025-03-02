@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\data\\projectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\data\\projectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,8 +11,20 @@
       "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\data\\projectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\data\\projectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,6 +58,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexa\\source\\repos\\PROG3270_GroupProject\\PROG3270_GroupProject\\client-app\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|c:\\users\\alexa\\desktop\\prog3270_checkin1\\backend\\prog3270_groupproject\\migrations\\20250211005826_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9249270F-02A1-44AE-AB3D-7528E2310CF4}|PROG3270_GroupProject\\PROG3270_GroupProject.csproj|solutionrelative:prog3270_groupproject\\migrations\\20250211005826_migrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,36 +71,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250211005826_Migrations.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
-              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
-              "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
-              "RelativeToolTip": "PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T00:58:26.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T18:38:26.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MemberController.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\MemberController.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Controllers\\MemberController.cs",
               "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\MemberController.cs",
               "RelativeToolTip": "PROG3270_GroupProject\\Controllers\\MemberController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAzwBsAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T00:33:49.047Z"
+              "WhenOpened": "2025-02-11T00:33:49.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Product.cs",
+              "RelativeToolTip": "PROG3270_GroupProject\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:06:28.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ProjectContext.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Data\\ProjectContext.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Data\\ProjectContext.cs",
@@ -104,8 +120,7 @@
               "RelativeToolTip": "PROG3270_GroupProject\\Data\\ProjectContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T00:13:16.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T00:13:16.638Z"
             },
             {
               "$type": "Document",
@@ -133,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\WeatherForecast.cs",
@@ -146,26 +161,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "PROG3270_GroupProject\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T18:38:26.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Member.cs",
               "RelativeDocumentMoniker": "PROG3270_GroupProject\\Models\\Member.cs",
               "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Models\\Member.cs",
               "RelativeToolTip": "PROG3270_GroupProject\\Models\\Member.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T00:12:37.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250211005826_Migrations.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
+              "RelativeDocumentMoniker": "PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
+              "ToolTip": "C:\\Users\\alexa\\Desktop\\PROG3270_CheckIn1\\BackEnd\\PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
+              "RelativeToolTip": "PROG3270_GroupProject\\Migrations\\20250211005826_Migrations.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T00:58:26.46Z"
             },
             {
               "$type": "Document",
