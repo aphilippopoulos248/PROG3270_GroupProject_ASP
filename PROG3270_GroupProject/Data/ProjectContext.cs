@@ -10,12 +10,17 @@ namespace PROG3270_GroupProject.Data
 
         public DbSet<Member> Members { get; set; }
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<Wishlist> Wishlists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CartProduct>()
                 .HasKey(cp => new { cp.CartId, cp.ProductId });
-            
+
+            modelBuilder.Entity<WishlistItem>()
+                .HasKey(wi => new { wi.WishlistId, wi.ProductId });
+
+            // Seed data for Members if needed
             modelBuilder.Entity<Member>().HasData(
                 new Member
                 {
