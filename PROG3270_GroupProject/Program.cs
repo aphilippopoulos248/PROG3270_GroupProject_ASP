@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using PROG3270_GroupProject.Infrastructure.Data;
+using PROG3270_GroupProject.Application.Services;
+using PROG3270_GroupProject.Application.Interfaces;
+using PROG3270_GroupProject.Infrastructure.Interfaces;
+using PROG3270_GroupProject.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +24,9 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddDbContext<ProjectContext>(options => options.UseSqlServer
     (builder.Configuration.GetConnectionString("ProjectContext")));
+
+builder.Services.AddScoped<IMemberService, MemberService>();
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 
 var app = builder.Build();
 

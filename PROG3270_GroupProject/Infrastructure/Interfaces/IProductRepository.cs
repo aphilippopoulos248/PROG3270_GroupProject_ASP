@@ -1,6 +1,6 @@
 ﻿using PROG3270_GroupProject.Domain.Entities;
 
-namespace PROG3270_GroupProject.Infrastructure.Repositories
+namespace PROG3270_GroupProject.Infrastructure.Interfaces
 {
     public interface IProductRepository
     {

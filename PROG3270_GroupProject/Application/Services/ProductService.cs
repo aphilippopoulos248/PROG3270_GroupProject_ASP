@@ -1,6 +1,6 @@
 ﻿using PROG3270_GroupProject.Application.Interfaces;
 using PROG3270_GroupProject.Domain.Entities;
-using PROG3270_GroupProject.Infrastructure.Repositories;
+using PROG3270_GroupProject.Infrastructure.Interfaces;
 
 namespace PROG3270_GroupProject.Application.Services
 {

@@ -1,4 +1,4 @@
-﻿namespace PROG3270_GroupProject.Models
+﻿namespace PROG3270_GroupProject.Domain.Entities
 {
     public class Member
     {

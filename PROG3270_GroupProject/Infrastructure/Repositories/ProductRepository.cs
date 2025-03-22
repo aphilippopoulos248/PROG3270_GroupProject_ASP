@@ -2,6 +2,7 @@
 using System;
 using PROG3270_GroupProject.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using PROG3270_GroupProject.Infrastructure.Interfaces;
 
 
 namespace PROG3270_GroupProject.Infrastructure.Repositories
