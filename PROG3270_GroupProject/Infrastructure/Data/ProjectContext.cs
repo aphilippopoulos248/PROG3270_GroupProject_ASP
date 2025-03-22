@@ -1,8 +1,9 @@
 ﻿// Data/ProjectContext.cs
 using Microsoft.EntityFrameworkCore;
 using PROG3270_GroupProject.Models;
+using PROG3270_GroupProject.Domain.Entities;
 
-namespace PROG3270_GroupProject.Data
+namespace PROG3270_GroupProject.Infrastructure.Data
 {
     public class ProjectContext : DbContext
     {
@@ -11,6 +12,7 @@ namespace PROG3270_GroupProject.Data
         public DbSet<Member> Members { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

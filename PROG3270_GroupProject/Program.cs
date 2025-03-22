@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using PROG3270_GroupProject.Data;
+using PROG3270_GroupProject.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

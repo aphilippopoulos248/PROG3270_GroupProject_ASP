@@ -1,13 +1,13 @@
 ﻿// Controllers/WishlistController.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PROG3270_GroupProject.Data;
+using PROG3270_GroupProject.Infrastructure.Data;
 using PROG3270_GroupProject.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PROG3270_GroupProject.Controllers
+namespace PROG3270_GroupProject.API.Controllers
 {
     [Route("api/wishlists")]
     [ApiController]

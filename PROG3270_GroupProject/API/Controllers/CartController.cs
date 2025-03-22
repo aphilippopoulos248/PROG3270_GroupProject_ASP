@@ -1,14 +1,14 @@
 ﻿// Controllers/CartController.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PROG3270_GroupProject.Data;
+using PROG3270_GroupProject.Infrastructure.Data;
 using PROG3270_GroupProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PROG3270_GroupProject.Controllers
+namespace PROG3270_GroupProject.API.Controllers
 {
     // Use the same route as Fake Store API: /carts
     [Route("carts")]
@@ -71,10 +71,10 @@ namespace PROG3270_GroupProject.Controllers
                 UserId = cartDto.UserId,
                 Date = DateTime.Now,
                 Products = cartDto.Products
-                    .Select(p => new CartProduct 
-                    { 
-                        ProductId = p.ProductId, 
-                        Quantity = p.Quantity 
+                    .Select(p => new CartProduct
+                    {
+                        ProductId = p.ProductId,
+                        Quantity = p.Quantity
                     })
                     .ToList()
             };

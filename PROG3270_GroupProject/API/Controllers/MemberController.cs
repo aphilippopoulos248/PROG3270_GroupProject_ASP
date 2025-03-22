@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PROG3270_GroupProject.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PROG3270_GroupProject.Models;
+using PROG3270_GroupProject.Infrastructure.Data;
 
-namespace PROG3270_GroupProject.Controllers
+namespace PROG3270_GroupProject.API.Controllers
 {
     [Route("api/members")]
     [ApiController]
