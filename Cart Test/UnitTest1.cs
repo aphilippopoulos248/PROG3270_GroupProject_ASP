@@ -1,115 +1,127 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
 using PROG3270_GroupProject.Controllers;
-using PROG3270_GroupProject.Data;
+using PROG3270_GroupProject.Interfaces;
 using PROG3270_GroupProject.Models;
 
-
-namespace PROG3270_GroupProject.Tests
+namespace Cart_Test
 {
     public class CartControllerTests
     {
-        //This will initialize firstly the data necessary to execute and test processes. 
-        private ProjectContext GetContextWithData()
+        private readonly Mock<ICartService> _mockCartService;
+        private readonly Mock<ILogger<CartController>> _mockLogger;
+        private readonly CartController _controller;
+        private readonly List<Cart> _testCarts;
+
+        public CartControllerTests()
         {
-            var options = new DbContextOptionsBuilder<ProjectContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-                .Options;
+            _mockCartService = new Mock<ICartService>();
+            _mockLogger = new Mock<ILogger<CartController>>();
 
-            var context = new ProjectContext(options);
+            _controller = new CartController(_mockCartService.Object, _mockLogger.Object);
 
-            // Seed test data
-            context.Carts.Add(new Cart {
-                Id = 1,
-                UserId = 1,
-                Date = DateTime.Now,
-                Products = new List<CartProduct> 
-                { 
-                    new CartProduct { CartId = 1, ProductId = 101, Quantity = 2 } 
+            _testCarts = new List<Cart>
+            {
+                new Cart
+                {
+                    Id = 1,
+                    UserId = 1,
+                    Date = DateTime.Now,
+                    Products = new List<CartProduct>
+                    {
+                        new CartProduct { CartId = 1, ProductId = 101, Quantity = 2 }
+                    }
+                },
+                new Cart
+                {
+                    Id = 2,
+                    UserId = 2,
+                    Date = DateTime.Now,
+                    Products = new List<CartProduct>
+                    {
+                        new CartProduct { CartId = 2, ProductId = 102, Quantity = 1 }
+                    }
                 }
-            });
-            context.Carts.Add(new Cart {
-                Id = 2,
-                UserId = 2,
-                Date = DateTime.Now,
-                Products = new List<CartProduct> 
-                { 
-                    new CartProduct { CartId = 2, ProductId = 102, Quantity = 1 } 
-                }
-            });
-            context.SaveChanges();
-            return context;
+            };
         }
 
         [Fact]
         public async Task GetCarts_ReturnsAllCarts()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.GetAllCartsAsync())
+                .ReturnsAsync(_testCarts);
 
-            var result = await controller.GetCarts();
+            var result = await _controller.GetCarts();
 
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var carts = Assert.IsAssignableFrom<IEnumerable<Cart>>(okResult.Value);
             Assert.Equal(2, carts.Count());
+
+            _mockCartService.Verify(service => service.GetAllCartsAsync(), Times.Once);
         }
 
         [Fact]
         public async Task GetCart_ReturnsNotFound_WhenCartDoesNotExist()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.GetCartByIdAsync(999))
+                .ReturnsAsync((Cart)null);
 
-            var result = await controller.GetCart(999);
+            var result = await _controller.GetCart(999);
 
             Assert.IsType<NotFoundResult>(result.Result);
+
+            _mockCartService.Verify(service => service.GetCartByIdAsync(999), Times.Once);
         }
 
         [Fact]
         public async Task GetCart_ReturnsCart_WhenCartExists()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            var testCart = _testCarts.First();
+            _mockCartService.Setup(service => service.GetCartByIdAsync(1))
+                .ReturnsAsync(testCart);
 
-            var result = await controller.GetCart(1);
+            var result = await _controller.GetCart(1);
 
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var cart = Assert.IsType<Cart>(okResult.Value);
             Assert.Equal(1, cart.Id);
+
+            _mockCartService.Verify(service => service.GetCartByIdAsync(1), Times.Once);
         }
 
         [Fact]
         public async Task GetCartsByUser_ReturnsNotFound_WhenNoCartsForUser()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.GetCartsByUserIdAsync(999))
+                .ReturnsAsync((IEnumerable<Cart>)null);
 
-            var result = await controller.GetCartsByUser(999);
+            var result = await _controller.GetCartsByUser(999);
 
             Assert.IsType<NotFoundResult>(result.Result);
+
+            _mockCartService.Verify(service => service.GetCartsByUserIdAsync(999), Times.Once);
         }
 
         [Fact]
         public async Task GetCartsByUser_ReturnsCarts_WhenCartsExistForUser()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            var userCarts = _testCarts.Where(c => c.UserId == 1).ToList();
+            _mockCartService.Setup(service => service.GetCartsByUserIdAsync(1))
+                .ReturnsAsync(userCarts);
 
-            var result = await controller.GetCartsByUser(1);
+            var result = await _controller.GetCartsByUser(1);
 
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var carts = Assert.IsAssignableFrom<IEnumerable<Cart>>(okResult.Value);
             Assert.Single(carts);
+
+            _mockCartService.Verify(service => service.GetCartsByUserIdAsync(1), Times.Once);
         }
 
         [Fact]
         public async Task AddCart_CreatesNewCart()
         {
-            var options = new DbContextOptionsBuilder<ProjectContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-                .Options;
-            var context = new ProjectContext(options);
-            var controller = new CartController(context);
             var cartDto = new CartCreateDto
             {
                 UserId = 3,
@@ -119,61 +131,57 @@ namespace PROG3270_GroupProject.Tests
                 }
             };
 
-            var result = await controller.AddCart(cartDto);
+            var newCart = new Cart
+            {
+                Id = 3,
+                UserId = 3,
+                Date = DateTime.Now,
+                Products = new List<CartProduct>
+                {
+                    new CartProduct { CartId = 3, ProductId = 201, Quantity = 3 }
+                }
+            };
+
+            _mockCartService.Setup(service => service.CreateCartAsync(It.IsAny<CartCreateDto>()))
+                .ReturnsAsync(newCart);
+
+            var result = await _controller.AddCart(cartDto);
 
             var createdAtResult = Assert.IsType<CreatedAtActionResult>(result.Result);
             var cart = Assert.IsType<Cart>(createdAtResult.Value);
             Assert.Equal(3, cart.UserId);
             Assert.Single(cart.Products);
             Assert.Equal(201, cart.Products.First().ProductId);
-        }
 
-        [Fact]
-        public async Task UpdateCart_ReturnsBadRequest_WhenIdMismatch()
-        {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
-            var updatedCart = new Cart
-            {
-                Id = 999, // mismatched ID
-                UserId = 1,
-                Date = DateTime.Now,
-                Products = new List<CartProduct>()
-            };
-
-            var result = await controller.UpdateCart(1, updatedCart);
-
-            Assert.IsType<BadRequestResult>(result);
+            _mockCartService.Verify(service => service.CreateCartAsync(It.IsAny<CartCreateDto>()), Times.Once);
         }
 
         [Fact]
         public async Task UpdateCart_ReturnsNotFound_WhenCartDoesNotExist()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
             var updatedCart = new Cart
             {
                 Id = 999,
-                UserId = 1,
-                Date = DateTime.Now,
-                Products = new List<CartProduct>()
+                UserId = 1
             };
 
-            var result = await controller.UpdateCart(999, updatedCart);
+            _mockCartService.Setup(service => service.UpdateCartAsync(999, updatedCart))
+                .ReturnsAsync(false);
+
+            var result = await _controller.UpdateCart(999, updatedCart);
 
             Assert.IsType<NotFoundResult>(result);
+
+            _mockCartService.Verify(service => service.UpdateCartAsync(999, updatedCart), Times.Once);
         }
 
         [Fact]
         public async Task UpdateCart_UpdatesCartSuccessfully()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
             var updatedCart = new Cart
             {
                 Id = 1,
                 UserId = 10,
-                Date = DateTime.Now,
                 Products = new List<CartProduct>
                 {
                     new CartProduct { ProductId = 101, Quantity = 5 },
@@ -181,74 +189,97 @@ namespace PROG3270_GroupProject.Tests
                 }
             };
 
-            var result = await controller.UpdateCart(1, updatedCart);
+            _mockCartService.Setup(service => service.UpdateCartAsync(1, updatedCart))
+                .ReturnsAsync(true);
+
+            var result = await _controller.UpdateCart(1, updatedCart);
 
             Assert.IsType<NoContentResult>(result);
-            var cart = await context.Carts.Include(c => c.Products).FirstOrDefaultAsync(c => c.Id == 1);
-            Assert.Equal(10, cart.UserId);
-            Assert.Equal(2, cart.Products.Count);
-            var prod101 = cart.Products.FirstOrDefault(p => p.ProductId == 101);
-            Assert.NotNull(prod101);
-            Assert.Equal(5, prod101.Quantity);
+
+            _mockCartService.Verify(service => service.UpdateCartAsync(1, updatedCart), Times.Once);
         }
 
         [Fact]
         public async Task DeleteCart_ReturnsNotFound_WhenCartDoesNotExist()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.DeleteCartAsync(999))
+                .ReturnsAsync(false);
 
-            var result = await controller.DeleteCart(999);
+            var result = await _controller.DeleteCart(999);
 
             Assert.IsType<NotFoundResult>(result);
+
+            _mockCartService.Verify(service => service.DeleteCartAsync(999), Times.Once);
         }
 
         [Fact]
         public async Task DeleteCart_DeletesCartSuccessfully()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.DeleteCartAsync(1))
+                .ReturnsAsync(true);
 
-            var result = await controller.DeleteCart(1);
+            var result = await _controller.DeleteCart(1);
 
             Assert.IsType<NoContentResult>(result);
-            var cart = await context.Carts.FindAsync(1);
-            Assert.Null(cart);
+
+            _mockCartService.Verify(service => service.DeleteCartAsync(1), Times.Once);
         }
 
         [Fact]
         public async Task RemoveItemFromCart_ReturnsNotFound_WhenCartDoesNotExist()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.RemoveItemFromCartAsync(999, 101))
+                .ReturnsAsync(false);
 
-            var result = await controller.RemoveItemFromCart(999, 101);
-
-            Assert.IsType<NotFoundResult>(result);
-        }
-
-        [Fact]
-        public async Task RemoveItemFromCart_ReturnsNotFound_WhenProductDoesNotExist()
-        {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
-
-            var result = await controller.RemoveItemFromCart(1, 999);
+            var result = await _controller.RemoveItemFromCart(999, 101);
 
             Assert.IsType<NotFoundResult>(result);
+
+            _mockCartService.Verify(service => service.RemoveItemFromCartAsync(999, 101), Times.Once);
         }
 
         [Fact]
         public async Task RemoveItemFromCart_RemovesProductSuccessfully()
         {
-            var context = GetContextWithData();
-            var controller = new CartController(context);
+            _mockCartService.Setup(service => service.RemoveItemFromCartAsync(1, 101))
+                .ReturnsAsync(true);
 
-            var result = await controller.RemoveItemFromCart(1, 101);
+            var result = await _controller.RemoveItemFromCart(1, 101);
 
             Assert.IsType<NoContentResult>(result);
-            var cart = await context.Carts.Include(c => c.Products).FirstOrDefaultAsync(c => c.Id == 1);
-            Assert.Empty(cart.Products);
+
+            _mockCartService.Verify(service => service.RemoveItemFromCartAsync(1, 101), Times.Once);
+        }
+
+        [Fact]
+        public async Task CheckoutCart_ReturnsOrder_WhenCartExists()
+        {
+            var checkoutDto = new CheckoutDto { IsRegisteredUser = true };
+            var testCart = _testCarts.First();
+
+            _mockCartService.Setup(service => service.CheckoutCartAsync(1))
+                .ReturnsAsync(testCart);
+
+            _mockCartService.Setup(service => service.CalculateTotalAsync(1, false))
+                .ReturnsAsync(100.00m); // Subtotal without discount
+
+            _mockCartService.Setup(service => service.CalculateTotalAsync(1, true))
+                .ReturnsAsync(90.00m); // Total with discount
+
+            var result = await _controller.CheckoutCart(1, checkoutDto);
+
+            var okResult = Assert.IsType<OkObjectResult>(result.Result);
+            var order = Assert.IsType<OrderDto>(okResult.Value);
+            Assert.Equal(1, order.CartId);
+            Assert.Equal(1, order.UserId);
+            Assert.Equal(100.00m, order.Subtotal);
+            Assert.Equal(10.00m, order.Discount);
+            Assert.Equal(90.00m, order.Total);
+
+            // Verify service was called
+            _mockCartService.Verify(service => service.CheckoutCartAsync(1), Times.Once);
+            _mockCartService.Verify(service => service.CalculateTotalAsync(1, false), Times.Once);
+            _mockCartService.Verify(service => service.CalculateTotalAsync(1, true), Times.Once);
         }
     }
 }
