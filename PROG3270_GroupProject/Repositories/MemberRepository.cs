@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PROG3270_GroupProject.Data;
+using PROG3270_GroupProject.Domain.Entities;
+using PROG3270_GroupProject.Infrastructure.Data;
 using PROG3270_GroupProject.Interfaces;
 using PROG3270_GroupProject.Models;
 

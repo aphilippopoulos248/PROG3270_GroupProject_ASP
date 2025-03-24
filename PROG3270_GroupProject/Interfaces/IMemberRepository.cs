@@ -1,4 +1,4 @@
-﻿using PROG3270_GroupProject.Models;
+﻿using PROG3270_GroupProject.Domain.Entities;
 
 namespace PROG3270_GroupProject.Interfaces
 {
