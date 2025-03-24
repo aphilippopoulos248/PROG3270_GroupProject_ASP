@@ -3,6 +3,10 @@ using System;
 using PROG3270_GroupProject.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using PROG3270_GroupProject.Infrastructure.Interfaces;
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 
 namespace PROG3270_GroupProject.Infrastructure.Repositories
@@ -10,15 +14,23 @@ namespace PROG3270_GroupProject.Infrastructure.Repositories
     public class ProductRepository : IProductRepository
     {
         private readonly ProjectContext _context;
+        private readonly HttpClient _httpClient;
 
-        public ProductRepository(ProjectContext context)
+        public ProductRepository(ProjectContext context, HttpClient httpClient)
         {
             _context = context;
+            _httpClient = httpClient;
         }
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            return await _context.Products.ToListAsync();
+            // Fetch data from the external API
+            var response = await _httpClient.GetStringAsync("https://fakestoreapi.com/products");
+
+            // Deserialize the JSON response into a list of Product objects
+            var products = JsonConvert.DeserializeObject<List<Product>>(response);
+
+            return products;
         }
 
         public async Task AddAsync(Product product)

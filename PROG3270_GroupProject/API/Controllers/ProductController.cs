@@ -17,7 +17,7 @@ namespace PROG3270_GroupProject.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<IEnumerable<Product>>> GetAll()
         {
             var products = await _productService.GetAllProductsAsync();
             return Ok(products);

@@ -28,6 +28,9 @@ builder.Services.AddDbContext<ProjectContext>(options => options.UseSqlServer
 builder.Services.AddScoped<IMemberService, MemberService>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
