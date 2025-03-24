@@ -21,7 +21,14 @@ namespace PROG3270_GroupProject.Domain.Entities
 
         [JsonProperty("image")]
         public string? Image { get; set; }
+        public class Rating
+        {
+            [JsonProperty("rate")]
+            public double Rate { get; set; }
 
+            [JsonProperty("count")]
+            public int Count { get; set; }
+        }
 
     }
 }

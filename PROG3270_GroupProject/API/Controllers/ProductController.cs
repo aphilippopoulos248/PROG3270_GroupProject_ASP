@@ -29,5 +29,15 @@ namespace PROG3270_GroupProject.API.Controllers
             await _productService.AddProductAsync(product);
             return CreatedAtAction(nameof(GetAll), new { id = product.ProductID }, product);
         }
+        [HttpGet("{productId}")]
+        public async Task<IActionResult> Get(int productId)
+        {
+            var product = await _productService.GetProductAsync(productId);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
     }
 }

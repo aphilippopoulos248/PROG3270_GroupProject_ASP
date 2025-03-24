@@ -6,5 +6,6 @@ namespace PROG3270_GroupProject.Application.Interfaces
     {
         Task<IEnumerable<Product>> GetAllProductsAsync();
         Task AddProductAsync(Product product);
+        Task<Product> GetProductAsync(int productId);
     }
 }

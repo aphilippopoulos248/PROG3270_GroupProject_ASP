@@ -22,5 +22,10 @@ namespace PROG3270_GroupProject.Application.Services
         {
             await _productRepository.AddAsync(product);
         }
+
+        public async Task<Product> GetProductAsync(int productId)
+        {
+            return await _productRepository.GetAsync(productId);
+        }
     }
 }

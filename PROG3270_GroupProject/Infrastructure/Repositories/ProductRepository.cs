@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using PROG3270_GroupProject.Models;
 
 
 namespace PROG3270_GroupProject.Infrastructure.Repositories
@@ -34,5 +35,14 @@ namespace PROG3270_GroupProject.Infrastructure.Repositories
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<Product> GetAsync(int productId)
+        {
+            var response = await _httpClient.GetStringAsync($"https://fakestoreapi.com/products/{productId}");
+            Console.WriteLine(response); 
+            var product = JsonConvert.DeserializeObject<Product>(response);
+            return product;
+        }
+
     }
 }

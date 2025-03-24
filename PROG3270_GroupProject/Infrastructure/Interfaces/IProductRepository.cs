@@ -6,5 +6,6 @@ namespace PROG3270_GroupProject.Infrastructure.Interfaces
     {
         Task<IEnumerable<Product>> GetAllAsync();
         Task AddAsync(Product product);
+        Task<Product> GetAsync(int productId);
     }
 }
