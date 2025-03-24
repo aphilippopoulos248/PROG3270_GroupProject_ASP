@@ -24,12 +24,8 @@ namespace PROG3270_GroupProject.Infrastructure.Repositories
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            // Fetch data from the external API
             var response = await _httpClient.GetStringAsync("https://fakestoreapi.com/products");
-
-            // Deserialize the JSON response into a list of Product objects
             var products = JsonConvert.DeserializeObject<List<Product>>(response);
-
             return products;
         }
 
