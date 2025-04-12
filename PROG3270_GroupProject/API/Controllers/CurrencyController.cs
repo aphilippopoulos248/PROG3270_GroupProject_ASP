@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace PROG3270_GroupProject.Controllers
+namespace PROG3270_GroupProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

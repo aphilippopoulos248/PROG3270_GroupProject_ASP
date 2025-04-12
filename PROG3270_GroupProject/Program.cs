@@ -1,8 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using PROG3270_GroupProject.Data;
+using PROG3270_GroupProject.Infrastructure.Data;
 using PROG3270_GroupProject.Interfaces;
 using PROG3270_GroupProject.Repositories;
 using PROG3270_GroupProject.Services;
+using PROG3270_GroupProject.Application.Interfaces;
+using PROG3270_GroupProject.Application.Services;
+using PROG3270_GroupProject.Infrastructure.Repositories;
+using PROG3270_GroupProject.Infrastructure.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +36,12 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddDbContext<ProjectContext>(options => options.UseSqlServer
     (builder.Configuration.GetConnectionString("ProjectContext")));
+
+builder.Services.AddScoped<IMemberService, MemberService>();
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
